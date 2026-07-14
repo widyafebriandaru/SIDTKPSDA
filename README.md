@@ -74,7 +74,7 @@ docker compose up -d --build
 Ini akan:
 - Menyalakan PostgreSQL di port `5432`
 - Menyalakan pgAdmin di `http://localhost:5050`
-- Build & menyalakan backend FastAPI di `http://localhost:8000`
+- Build & menyalakan backend FastAPI di `http://localhost:8010`
 - **Otomatis menjalankan migration** (`alembic upgrade head`) sebelum server backend start
   — jadi begitu container backend hidup, semua tabel sudah otomatis terbentuk.
 
@@ -85,7 +85,7 @@ docker compose logs -f backend
 
 ### 3. Cek API sudah jalan
 
-Buka `http://localhost:8000/docs` — dokumentasi interaktif (Swagger UI) otomatis dari FastAPI.
+Buka `http://localhost:8010/docs` — dokumentasi interaktif (Swagger UI) otomatis dari FastAPI.
 Semua endpoint CRUD bisa langsung dicoba dari sini tanpa perlu Postman.
 
 ### 4. Isi data contoh (opsional, untuk uji coba)
